@@ -10,6 +10,8 @@ Using SemSpect for RDF (beta) on a dataset extracted from https://orcid.org
 
 At startup the browser displays information on classes and properties in the database.
 
+![Start](https://github.com/rdmpage/semspect-explore/raw/main/start.png)
+
 ### Classes
 - http://schema.org/PropertyValue 1,277,592
 - http://schema.org/CreativeWork 639.879
@@ -35,6 +37,8 @@ On the left hand side it shows the classes. Double clicking selects one of these
 ## Resources
 
 Clicking on selected class gives the option to “Show resource table of selected group”. This lists the values for literals for members of the class, and the URI for each member of the class (which may be a blank node).
+
+![Resource](https://github.com/rdmpage/semspect-explore/raw/main/resource.png)
 
 For example, for http://schema.org/Person this view is created using this SPARQL query:
 
@@ -67,6 +71,8 @@ LIMIT   50
 ## Connections
 
 Clicking on the triangle to the right lists class connected to the current class. You can click on a particular connection (e.g., schema:creator to schema:CreativeWork), which then displays that connection. 
+
+![Connection](https://github.com/rdmpage/semspect-explore/raw/main/connection.png)
 
 The number of connected classes is given by a SPARQL query that times out in Oxigraph, e.g.:
 
